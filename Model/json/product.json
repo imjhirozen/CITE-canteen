@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "product_type": "FOOD",
+        "product_name": "Sandwich",
+        "product_price": 40,
+        "product_image": "..\/View\/assets\/img\/Sandwich.png"
+    },
+    {
+        "id": 2,
+        "product_type": "FOOD",
+        "product_name": "Pasta",
+        "product_price": 50,
+        "product_image": "..\/View\/assets\/img\/Pasta.png"
+    },
+    {
+        "id": 3,
+        "product_type": "FOOD",
+        "product_name": "Burger",
+        "product_price": 45,
+        "product_image": "..\/View\/assets\/img\/Burger.jpg"
+    },
+    {
+        "id": 4,
+        "product_type": "FOOD",
+        "product_name": "Salad",
+        "product_price": 25,
+        "product_image": "..\/View\/assets\/img\/Salad.jpg"
+    },
+    {
+        "id": 5,
+        "product_type": "DRINK",
+        "product_name": "Coffee",
+        "product_price": 20,
+        "product_image": "..\/View\/assets\/img\/Coffee.jpg"
+    },
+    {
+        "id": 6,
+        "product_type": "DRINK",
+        "product_name": "coke",
+        "product_price": 15,
+        "product_image": "..\/View\/assets\/img\/coke.jpg"
+    },
+    {
+        "id": 7,
+        "product_type": "DRINK",
+        "product_name": "Smoothie",
+        "product_price": 25,
+        "product_image": "..\/View\/assets\/img\/Smoothie.jpg"
+    },
+    {
+        "id": 8,
+        "product_type": "DESSERT",
+        "product_name": "Ice Cream",
+        "product_price": 25,
+        "product_image": "..\/View\/assets\/img\/Ice Cream.jpg"
+    },
+    {
+        "id": 9,
+        "product_type": "DESSERT",
+        "product_name": "Cookies",
+        "product_price": 5,
+        "product_image": "..\/View\/assets\/img\/Cookies.jpg"
+    },
+    {
+        "id": 10,
+        "product_type": "DESSERT",
+        "product_name": "Brownies",
+        "product_price": 15,
+        "product_image": "..\/View\/assets\/img\/Brownies.jpeg"
+    },
+    {
+        "id": 11,
+        "product_type": "SNACK",
+        "product_name": "Chips",
+        "product_price": 20,
+        "product_image": "..\/View\/assets\/img\/Chips.png"
+    }
+]

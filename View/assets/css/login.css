@@ -1,0 +1,98 @@
+body {
+    /* background-color: #1B263B; */
+    background-color: rgba(27,38,59, 0.9);
+    /* background: linear-gradient(to right, #fff 50%, #2672B8 50%);
+    margin: 0; */
+    /* height: 100vh; */
+}
+
+.cite-boys-logo{
+    width: 750px;
+    height: 375px;
+}
+
+.white-greeting{
+    color: #fff;
+}
+
+.welcome-message{
+    position: relative;
+    left: 4.5rem;
+    font-size: 68px;
+}
+
+.welcome-message-container{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+    /* height: 100vh;    */
+}
+
+.login-form-container{
+    /* border: 1px solid; */
+    width: 425px;
+    border-radius: 50px;
+    /* background-color: #7291B1; */
+    background-color: rgba(114,145,177, 0.5);
+    /* background-color: #55789B; */
+    color: #fff;
+    box-shadow: 4px 4px 4px #000;
+}
+
+
+.login-form-container-container{
+    display: flex;
+    justify-content: center;
+}
+
+.login-form{
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; 
+    gap: 1rem;
+
+}
+
+.form-label{
+    font-size: 25px;
+}
+
+.form-input-box{
+    width: 300px;
+    height: 30px;
+    /* background-color: #F2F2F2; */
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.form-input-box:focus{
+    outline: none;
+}
+
+.forgot-password-link-and-login-button-container{
+    display: flex;
+    gap: 4rem;
+}
+
+.login-button{
+    border: 1px solid #000;
+    border-radius: 50px;
+    /* background-color: #2672B8; */
+    background-color: rgba(31,40,51, 0.7);
+    color: #fff;
+    width: 94px;
+    height: 32px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}

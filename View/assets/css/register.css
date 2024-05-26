@@ -1,0 +1,101 @@
+body, header{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+.header{
+    background-color: #2672B8;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-title{
+    font-size: 50px;
+    color: #fff;
+}
+
+.form-title{
+    font-size: 36px;
+}
+
+.form-label{
+    font-size: 24px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.form-box{
+    width: 252px;
+    height: 33px;
+    margin-bottom: 2rem;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: #474747;
+    color: #fff;
+    font-size: 18px;
+}
+
+.personal-information-form-container{
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 625px;
+    border-radius: 20px;
+}
+
+.account-details-form-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 700px;
+    padding-right: 1rem;
+    border-radius: 20px;
+}
+
+.form-button{
+    background-color: #474747;
+    color: #fff;
+    width: 157px;
+    height: 35px;
+    font-size: 18px;
+}
+
+.cancel-and-create-buttons-container{
+    display: flex;
+    gap: 3rem;
+    margin-left: 2rem;
+}
+
+.top-form{
+    margin-left: 3rem;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    gap: 3rem;
+    padding-bottom: 4rem;
+}
+
+.bottom-form{
+    display: flex;
+    justify-content: center;
+}
+
+.register-form-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+
+.login-link{
+    font-size: 18px;
+}

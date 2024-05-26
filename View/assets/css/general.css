@@ -1,0 +1,361 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.container{
+  background-color: rgb(82, 82, 82);
+  display: flex;
+  height: 100vh;
+
+  position: relative;
+
+}
+
+nav{
+  background-color: #1b263bd3;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  backdrop-filter: blur(2px);
+  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.792);
+  width: 15%;
+}
+
+
+nav > button{
+  color: #d3d3d3;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  height: 60px;
+  text-align: left;
+  padding-left: 20%;
+
+  cursor: pointer;
+}
+
+.current_page_button_click{
+  background-color: #ffffffac;
+  color: black;
+}
+
+nav > button:hover{
+  background-color: #ffffffac;
+  color: black;
+}
+
+nav > button:last-child{
+  margin-top: auto;
+}
+
+nav > button:last-child:hover{
+  background-color: #ff0000ac;
+  color: rgb(255, 255, 255);
+}
+
+/* DESIGN FOR MAIN PANEL */
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  overflow: auto;
+  backdrop-filter: blur(3px);
+  width: calc(100% - 35%);
+  background-color: #1f1f1f4e;
+}
+
+main::-webkit-scrollbar{
+  display: none;
+}
+
+.itemMenu{
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.782);
+  border: 2px solid black;
+  width: 250px;
+  height: 355px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
+  border-radius: 10px;
+}
+
+.imgContainer{
+  width: 90%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 5%;
+  border: none;
+  border-radius: 10%;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.71);
+}
+
+.fitCover{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.food_info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+}
+
+.item_name {
+  font-family: monospace;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 50px;
+}
+
+.product_price{
+  font-size: 1.5rem;
+  padding: 5px;
+  width: 100%;
+  height: 50px;
+}
+.orderContainer{
+
+  padding: 3%;
+  display: grid;
+  gap: 5%;
+  margin-top: -20px;
+}
+
+.quantityPanel{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1.5fr;
+  gap: 2%;
+  padding: 2%;
+}
+
+.quantityPanel > button{
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.704);
+  background-color: rgb(225, 223, 223);
+  cursor: pointer;
+}
+
+.amount{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.placeOrder{
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(225, 223, 223);
+  font-size: 1rem;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.742);
+  margin-bottom: 2%;
+  transition: 0.2s;
+  cursor: pointer;
+  width: 80%;
+  margin: auto;
+  font-weight: bold;
+}
+
+.placeOrder:hover,
+.quantityPanel > button:hover{
+  background-color: rgb(189, 187, 187);
+}
+
+
+/* DESIGN FOR VIEW ITEMS */
+aside{
+  background-color: #1b263bd3;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 0.5fr 5fr 1.5fr;
+  gap: 10px;
+  width: 20%;
+}
+
+aside > div.orderPanel::-webkit-scrollbar{
+  display: none;
+}
+
+aside > div.orderPanel{
+  gap: 10px;
+  padding: 10px;
+  overflow: auto;
+
+  position: relative;
+  
+}
+
+.label{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside > .label > h1{
+  color: white;
+  font-family: monospace;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.orderList{
+  background-color: #9098a7;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-left: 10%;
+  padding-block: 5%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.823);
+}
+
+aside > div.totalPanel{
+  padding: 20px;
+}
+
+aside > div.totalPanel > div.total{
+  background-color: rgba(193, 193, 193, 0.712);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.572);
+}
+
+#check_out_button {
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 70%;
+  background-color: rgb(117, 241, 1);
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.774);
+  transition: 0.2s;
+}
+
+#check_out_button:hover{
+  background-color: rgb(89, 169, 14);
+}
+
+.total > h4{
+  font-size: 2rem;
+}
+
+.order_action {
+  position: absolute;
+
+  right: 10px;
+}
+
+.order_action button {
+
+  background-color: #dc3545;
+  color: #ffffff;
+
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.order_action button:hover{
+  background-color: #8f1925;
+}
+
+
+/* 
+  ------ MODAL
+*/
+
+
+#modal {
+  
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: grid;
+  align-content: center;
+  justify-content: center;
+
+  display: none;
+}
+
+#form_container {
+  background-color: gray;
+
+  display: grid;
+  grid-template-columns: 1fr;
+
+  padding: 50px;
+  border-radius: 10px;
+}
+
+#form_container div {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-bottom: 50px;
+}
+
+#form_container > label,
+#form_container > label > input{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+#form_container > label > input{
+  width: 200px;
+  text-align: center;
+}
+
+form > button:last-child,
+form > input{
+  font-size: 2rem;
+  width: 200px;
+  margin-bottom: 10px;
+  margin: auto;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
+  transition: 0.1s;
+}
+
+form > button:last-child:hover,
+form > input:hover{
+  background-color: rgb(71, 69, 69);
+  color: white;
+}

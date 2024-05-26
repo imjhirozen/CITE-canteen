@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body{
+  background-color: aquamarine;
+}
+
+/* DESIGN SA HEADER  */
+
+header{
+  background-color: #2672B8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  gap: 50px;
+}
+
+#img_container{
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fit_cover{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header > h1{
+  color: white;
+  font-size: 3rem;
+}
+
+
+/* DESIGN SA MAIN  */
+#container{
+  background-color: rgb(8, 195, 80);
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  height: calc(100vh - 100px);
+}
+
+aside{
+  background-color: rgb(170, 170, 170);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5%;
+  padding: 20px;
+}
+
+aside > h1{
+  font-size: 200%;
+  font-weight: bold;
+}
+
+aside > button{
+  width: 100%;
+  font-size: 200%;
+}
+
+
+/* design sa main  */
+
+main{
+  background-color: white;
+  overflow: auto;
+}
+
+nav{
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+nav > button{
+  width: 25%;
+  font-size: 150%;
+}
+
+
+/* design sa main  */
+
+#list_container{
+  background-color: white;
+  height: calc(100% - 50px);
+  padding: 20px;
+  overflow: auto;
+}
+
+#list_container > table{
+  width: 100%;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#list_container button{
+  font-size: 1.5rem;
+  width: 200px;
+}
+
+#list_container td:nth-child(4),
+#list_container td:nth-child(5){  
+  width: 100px;
+}
+
+#list_container td:nth-child(5) button{
+  background-color: rgba(255, 0, 0, 0.346);
+}

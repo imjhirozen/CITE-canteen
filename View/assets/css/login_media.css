@@ -1,0 +1,39 @@
+
+@media (min-width: 1400px) and (max-width: 1599px){
+    .login-form-container{
+    }
+}
+@media (min-width: 1200px) and (max-width: 1399px){
+    .login-form-container{
+    }
+}
+
+@media (min-width:1000px ) and (max-width: 1199px){
+    .login-form-container{
+        
+    }
+}
+
+@media (min-width:500px ) and (max-width: 600px){
+    .login-form-container-container{
+        position: relative;
+        left: 3rem;
+    }
+
+    .welcome-message-container{
+        position: relative;
+        left: 3rem;
+    }
+}
+@media (min-width:300px ) and (max-width: 499px){
+    .login-form-container-container{
+        position: relative;
+        left: 5rem;
+    }
+
+    .welcome-message-container{
+        position: relative;
+        left: 5rem;
+    }
+}
+
